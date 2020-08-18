@@ -16,8 +16,8 @@ This example is to show you how to decouple your code in two or more separate fi
 
 ```
 # compile object files separately
-flang -c main.f95
-flang -c array_operation.f95
+flang -c main.f08
+flang -c array_operation.f08
 
 # link
 flang main.o array_operation.o
@@ -31,7 +31,7 @@ or
 
 ```
 # compile all files at once
-flang main.f95 array_operation.f95
+flang main.f08 array_operation.f08
 
 # run
 ./a.out
